@@ -7,7 +7,7 @@
 > **Dynamic browser network chaos engineering & resilience testing for AI agents and developers.**  
 > _Your tests run on perfect networks. Your users don't. ChaosBull lets AI agents unleash controlled network havoc on web pages to verify they don't break in production._
 
-📖 **New to Chaos Engineering or looking for an intuitive explanation?** Check out our [First Principles Guide for Non-Tech Minds](file:///c:/Users/Omkar/Desktop/chaos-bul/playwright-network-chaos-mcp/CHAOSBULL_FIRST_PRINCIPLES.md) explaining how ChaosBull works using everyday analogies.
+📖 **New to Chaos Engineering or looking for an intuitive explanation?** Check out our [First Principles Guide for Non-Tech Minds](./CHAOSBULL_FIRST_PRINCIPLES.md) explaining how ChaosBull works using everyday analogies.
 
 ---
 
