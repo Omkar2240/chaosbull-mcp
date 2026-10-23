@@ -1,6 +1,6 @@
 {
   "name": "chaosbull",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "ChaosBull MCP — Dynamic browser network chaos engineering & resilience testing for AI agents and developers",
   "type": "module",
   "main": "dist/index.js",
