@@ -1,0 +1,70 @@
+{
+  "name": "chaosbull",
+  "version": "1.0.0",
+  "description": "ChaosBull MCP — Dynamic browser network chaos engineering & resilience testing for AI agents and developers",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "chaosbull": "dist/index.js",
+    "chaosbull-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist/",
+    "README.md",
+    "LICENSE",
+    "server.json",
+    "CHAOSBULL_FIRST_PRINCIPLES.md"
+  ],
+  "scripts": {
+    "build": "node -e \"const fs=require('fs'); if (fs.existsSync('dist')) fs.rmSync('dist', {recursive:true, force:true});\" && tsc",
+    "pretest": "npm run build",
+    "lint": "eslint src",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "smoke": "node scripts/smoke.mjs",
+    "test": "npm run smoke",
+    "prepare": "husky"
+  },
+  "keywords": [
+    "chaosbull",
+    "mcp",
+    "chaos",
+    "chaos-engineering",
+    "network-chaos",
+    "playwright",
+    "resilience",
+    "testing",
+    "ai-agent",
+    "sdet"
+  ],
+  "author": "ChaosBull",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "playwright": "^1.52.0",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^25.8.0",
+    "@typescript-eslint/eslint-plugin": "^8.59.3",
+    "@typescript-eslint/parser": "^8.59.3",
+    "eslint": "^9.39.4",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.5.2",
+    "prettier": "^3.8.3",
+    "typescript": "^6.0.3"
+  },
+  "lint-staged": {
+    "**/*.{ts,mjs,json,md}": [
+      "prettier --write"
+    ],
+    "src/**/*.ts": [
+      "eslint --fix"
+    ]
+  },
+  "mcpName": "io.chaosbull/chaosbull",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Omkar2240/chaosbull-mcp.git"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.chaosbull/chaosbull",
+  "description": "ChaosBull MCP — Dynamic browser network chaos engineering & resilience testing for AI agents and developers",
+  "repository": {
+    "url": "https://github.com/Omkar2240/chaosbull-mcp",
+    "source": "github"
+  },
+  "version": "1.0.0",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "chaosbull",
+      "version": "1.0.0",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}
