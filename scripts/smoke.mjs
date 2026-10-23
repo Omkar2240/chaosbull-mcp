@@ -228,7 +228,10 @@ const TESTS = [
 
 async function runTest(test) {
   return new Promise((resolve) => {
-    const proc = spawn('node', [serverPath], { stdio: ['pipe', 'pipe', 'pipe'] });
+    const proc = spawn('node', [serverPath], {
+      stdio: ['pipe', 'pipe', 'pipe'],
+      env: { ...process.env, CHAOSBULL_HEADLESS: 'true' },
+    });
     const input = test.messages.map((m) => JSON.stringify(m)).join('\n') + '\n';
     const lastId = Math.max(...test.messages.map((m) => m.id));
     const responses = [];

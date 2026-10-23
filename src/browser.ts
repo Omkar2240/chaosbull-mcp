@@ -70,10 +70,11 @@ export async function withPage<T>(
     ? (viewportOrOptions as { width: number; height: number })
     : ((viewportOrOptions as WithPageOptions)?.viewport ?? { width: 1280, height: 720 });
 
+  const defaultHeadless = process.env.CHAOSBULL_HEADLESS === 'true' || Boolean(process.env.CI);
+
   const headless = isDirectViewport
-    ? process.env.CHAOSBULL_HEADLESS === 'true'
-    : ((viewportOrOptions as WithPageOptions)?.headless ??
-      process.env.CHAOSBULL_HEADLESS === 'true');
+    ? defaultHeadless
+    : ((viewportOrOptions as WithPageOptions)?.headless ?? defaultHeadless);
 
   const keepBrowserOpen = isDirectViewport
     ? process.env.CHAOSBULL_KEEP_OPEN === 'true'
