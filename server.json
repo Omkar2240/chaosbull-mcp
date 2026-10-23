@@ -6,12 +6,12 @@
     "url": "https://github.com/Omkar2240/chaosbull-mcp",
     "source": "github"
   },
-  "version": "1.0.0",
+  "version": "1.0.1",
   "packages": [
     {
       "registryType": "npm",
       "identifier": "chaosbull",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "transport": {
         "type": "stdio"
       }
