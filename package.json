@@ -13,7 +13,9 @@
     "README.md",
     "LICENSE",
     "server.json",
-    "CHAOSBULL_FIRST_PRINCIPLES.md"
+    "CHAOSBULL_FIRST_PRINCIPLES.md",
+    "AGENTS.md",
+    ".agents"
   ],
   "scripts": {
     "build": "node -e \"const fs=require('fs'); if (fs.existsSync('dist')) fs.rmSync('dist', {recursive:true, force:true});\" && tsc",
