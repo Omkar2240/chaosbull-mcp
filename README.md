@@ -258,31 +258,13 @@ The ultimate resilience test. Injects failure into target endpoints and executes
 
 ---
 
-## 🚀 Quick Start & Installation
+## 🔌 1-Minute Setup
 
-### Option 1: Direct Execution with NPX
+You do **not** need to manually clone or install anything. Just add ChaosBull to your AI assistant:
 
-Run without installation:
+### Cursor, Claude Desktop, Antigravity & Windsurf
 
-```bash
-npx chaosbull
-```
-
-_(Also available as `npx chaosbull-mcp`)_
-
-### Option 2: Global Installation
-
-```bash
-npm install -g chaosbull
-```
-
----
-
-## 🔌 Connecting to AI Clients
-
-### Claude Desktop
-
-Add to your `claude_desktop_config.json`:
+Add this to your MCP configuration (`claude_desktop_config.json`, `.cursor/mcp.json`, or IDE MCP settings):
 
 ```json
 {
@@ -295,20 +277,13 @@ Add to your `claude_desktop_config.json`:
 }
 ```
 
-### Cursor & VS Code (Cline / Roo / Antigravity)
+> **Cursor UI Shortcut**: Go to **Settings ➔ MCP ➔ Add New MCP Server**:
+>
+> - **Name:** `chaosbull`
+> - **Type:** `command`
+> - **Command:** `npx -y chaosbull`
 
-Add to your MCP settings:
-
-```json
-{
-  "mcpServers": {
-    "chaosbull": {
-      "command": "node",
-      "args": ["/absolute/path/to/chaosbull/dist/index.js"]
-    }
-  }
-}
-```
+That's it! Your AI assistant will automatically launch ChaosBull on demand and gain access to all 8 resilience tools.
 
 ---
 
